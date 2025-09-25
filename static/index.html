@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastAPI Service Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1><i class="fas fa-rocket"></i> FastAPI Service Dashboard</h1>
+            <p>Minimal FastAPI service with modern UI</p>
+        </header>
+
+        <div class="dashboard">
+            <div class="card">
+                <div class="card-header">
+                    <h3><i class="fas fa-hand-wave"></i> Hello Endpoint</h3>
+                </div>
+                <div class="card-body">
+                    <button id="helloBtn" class="btn btn-primary">
+                        <i class="fas fa-play"></i> Test Hello
+                    </button>
+                    <div id="helloResult" class="result"></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h3><i class="fas fa-echo"></i> Echo Endpoint</h3>
+                </div>
+                <div class="card-body">
+                    <div class="input-group">
+                        <input type="text" id="echoInput" placeholder="Enter message to echo..." class="input">
+                        <button id="echoBtn" class="btn btn-secondary">
+                            <i class="fas fa-paper-plane"></i> Echo
+                        </button>
+                    </div>
+                    <div id="echoResult" class="result"></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h3><i class="fas fa-calculator"></i> Sum Endpoint</h3>
+                </div>
+                <div class="card-body">
+                    <div class="input-group">
+                        <input type="text" id="sumInput" placeholder="Enter numbers separated by commas (e.g., 1,2,3,4)" class="input">
+                        <button id="sumBtn" class="btn btn-success">
+                            <i class="fas fa-plus"></i> Calculate Sum
+                        </button>
+                    </div>
+                    <div id="sumResult" class="result"></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h3><i class="fas fa-heartbeat"></i> Health Check</h3>
+                </div>
+                <div class="card-body">
+                    <button id="healthBtn" class="btn btn-info">
+                        <i class="fas fa-stethoscope"></i> Check Health
+                    </button>
+                    <div id="healthResult" class="result"></div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2024 FastAPI Service. Built with <i class="fas fa-heart"></i> and FastAPI</p>
+        </footer>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
